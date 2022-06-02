@@ -81,22 +81,6 @@ search = driver.find_element(By.XPATH, '''//div[@id="ctl00_ctl00_ContentPlaceHol
 search.send_keys(Keys.RETURN)
 
 #%% CONNECT TO STEP ONE WEBPAGE
-from cgitb import html
-from gettext import find
-from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-
-from selenium.webdriver import ActionChains
-
-# import org.openqa.selenium.WebDriver;
-# import org.openqa.selenium.WebElement;
-# import org.openqa.selenium.chrome.ChromeDriver;
-from time import sleep
-from datetime import timedelta
-import datetime
 
 PATH = "C:\Program Files (x86)\chromedriver.exe"
 driver = webdriver.Chrome(PATH)
